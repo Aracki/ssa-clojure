@@ -1,0 +1,21 @@
+body{
+    background-color: #e6fffc;
+}
+
+h1{
+    text-align: center;
+    font-family:  Consolas;
+    color: rgb(0, 76, 193);
+}
+
+.nav{
+    font-family:  Consolas;
+    font-size: larger;
+    color: rgb(0, 76, 193);
+}
+
+ul.nav a:hover { background-color: #D0E9C6 !important; }
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent;
+}

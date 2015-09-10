@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Employees</title>
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a href="/index">Home</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Rad sa tabelama <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="/employees">Employees</a></li>
+                <li role="presentation"><a href="/customers">Customers</a></li>
+            </ul>
+        </li>
+        <!--<li role="presentation"><a href="/weka">Weka</a></li>-->
+    </ul>
+    <br>
+    <h1>Table customers</h1>
+    <br>
+        <table class="table table-bordered table-hover">
+        <tr>
+
+            <th>Customer number</th>
+            <th>Customer name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Edit</th>
+            <th>Remove</th>
+
+            {{#customers}}
+
+            <tr class="success">
+                <th>{{customernumber}}</th>
+                <th>{{customername}}</th>
+                <th>{{phone}}</th>
+                <th>{{addressline1}}</th>
+                <th>{{city}}</th>
+                <th>{{state}}</th>
+                <td><a href="/model/customers/{{customernumber}}/update" class="btn btn-success">Edit</a></td>
+                <td><a href="/model/customers/{{customernumber}}/remove" class="btn btn-success">Remove</a></td>
+            </tr>
+            {{/customers}}
+
+        </table>
+
+</div>
+</body>
+</html>

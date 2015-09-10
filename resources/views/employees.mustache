@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Employees</title>
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a href="/index">Home</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Rad sa tabelama <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li role="presentation"><a href="/employees">Employees</a></li>
+                <li role="presentation"><a href="/customers">Customers</a></li>
+            </ul>
+        </li>
+        <!--<li role="presentation"><a href="/weka">Weka</a></li>-->
+    </ul>    <br>
+
+    <h1>Table employees</h1>    <br>
+
+    <table class="table table-bordered table-hover">
+    <tr>
+
+        <th>Employee number</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Office code</th>
+        <th>Edit</th>
+        <th>Remove</th>
+
+        {{#employees}}
+
+        <tr class="success">
+            <th>{{employeenumber}}</th>
+            <th>{{firstname}} {{lastname}}</th>
+            <th>{{email}}</th>
+            <th>{{officecode}}</th>
+            <td><a href="/model/employees/{{employeenumber}}/update" class="btn btn-success">Edit</a></td>
+            <td><a href="/model/employees/{{employeenumber}}/remove" class="btn btn-success">Remove</a></td>
+        </tr>
+        {{/employees}}
+
+
+    </table>
+
+</div>
+</body>
+</html>
