@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: clojurewerkz/envision:0.1.0-20150510.132354-5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/clojurewerkz/envision/0.1.0-SNAPSHOT/envision-0.1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

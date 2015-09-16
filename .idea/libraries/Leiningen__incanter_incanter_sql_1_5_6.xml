@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: incanter/incanter-sql:1.5.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/incanter/incanter-sql/1.5.6/incanter-sql-1.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

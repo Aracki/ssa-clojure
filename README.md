@@ -1,6 +1,6 @@
 # ssa_raca
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure project @FON 2015
 
 ## Usage
 

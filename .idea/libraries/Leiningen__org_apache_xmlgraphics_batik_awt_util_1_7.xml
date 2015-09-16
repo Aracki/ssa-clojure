@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.apache.xmlgraphics/batik-awt-util:1.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

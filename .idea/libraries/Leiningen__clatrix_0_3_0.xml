@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: clatrix:0.3.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/clatrix/clatrix/0.3.0/clatrix-0.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

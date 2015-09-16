@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ssa_clojure_raca.iml" filepath="$PROJECT_DIR$/ssa_clojure_raca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssa_raca.iml" filepath="$PROJECT_DIR$/ssa_raca.iml" />
     </modules>
   </component>
 </project>

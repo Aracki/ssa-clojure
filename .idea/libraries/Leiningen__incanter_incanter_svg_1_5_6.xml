@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: incanter/incanter-svg:1.5.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/incanter/incanter-svg/1.5.6/incanter-svg-1.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

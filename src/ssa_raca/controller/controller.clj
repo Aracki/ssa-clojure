@@ -3,6 +3,7 @@
     [clostache.parser :as clostache]
     [ssa-raca.model.customers :as customers-model]
     [ssa-raca.model.employees :as employees-model]
+    [ssa-raca.draw.draw-graphs :as draw-model]
     ))
 
 (defn read-template [template-name]
@@ -18,6 +19,9 @@
 
 (defn customers[]
   (render-template "customers" {:customers (customers-model/allCustomers)}))
+
+;(defn customers[]
+  ;(draw-model/makeChart))
 
 (defn employees []
   (render-template "employees" {:employees (employees-model/allEmployees)}))

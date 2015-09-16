@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: org.scilab.forge/jlatexmath:0.9.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/scilab/forge/jlatexmath/0.9.6/jlatexmath-0.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
