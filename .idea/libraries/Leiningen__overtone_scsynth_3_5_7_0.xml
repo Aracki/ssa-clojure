@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: overtone/scsynth:3.5.7.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/overtone/scsynth/3.5.7.0/scsynth-3.5.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

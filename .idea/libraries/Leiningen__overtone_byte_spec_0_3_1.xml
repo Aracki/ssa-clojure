@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: overtone/byte-spec:0.3.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/overtone/byte-spec/0.3.1/byte-spec-0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

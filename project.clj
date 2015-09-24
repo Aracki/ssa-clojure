@@ -14,6 +14,7 @@
                  [clj-http "2.0.0"]
                  [incanter "1.5.6"]
                  [clojurewerkz/envision "0.1.0-SNAPSHOT"]
+                 [overtone "0.9.1"]
                  ]
   :plugins [[lein-ring "0.9.6"]]
   :ring {:handler ssa_raca.core/app}

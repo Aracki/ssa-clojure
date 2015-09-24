@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Update customer</title>
+</head>
+<body>
+<div id="addForm" style="width:30%;">
+    <form action="/model/customers/{{customers.customernumber}}/update" method="post">
+        <div class="form-group">
+            <label for="model">Customer name</label>
+            <input type="text" class="form-control" name="customerName" value="{{customers.customername}}"/>
+        </div>
+        <div class="form-group">
+            <label for="year">Phone</label>
+            <input type="text" class="form-control" name="phone" value="{{customers.phone}}"/>
+        </div>
+        <div class="form-group">
+            <label for="horsepower">City</label>
+            <input type="text" class="form-control" name="city" value="{{customers.city}}"/>
+        </div>
+
+        <div class="form-group">
+
+            <label for="man_id">Employee</label>
+            <select name="salesRepEmployeeNumber" class="form-control" id="salesRepEmployeeNumber">
+                {{#employees}}
+                    <option value="{{employeenumber}}">{{lastname}}</option>
+                {{/employees}}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save update</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

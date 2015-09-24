@@ -19,5 +19,21 @@
   (jdbc/query mysql-db
               ["SELECT * FROM employees e"]))
 
+(defn allOffices []
+  (jdbc/query mysql-db
+              ["SELECT * FROM offices o"]))
+
+(defn get [id]
+  (first (jdbc/query mysql-db
+                  (sql/select * :employees (sql/where {:employeeNumber id})))))
+
 (defn removeE [id]
   (jdbc/delete! mysql-db :employees (sql/where {:employeeNumber id})))
+
+
+(defn update [id params]
+  (jdbc/update! mysql-db :employees params (sql/where {:employeeNumber id})))
+
+(defn insertE
+  [params]
+  (jdbc/insert! mysql-db :employees params))

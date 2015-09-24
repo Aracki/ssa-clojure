@@ -28,6 +28,27 @@
                (do (customers-model/removeC id)
                  (resp/redirect "/customers")))
 
+                 (POST "/model/employees/insert" [& params]
+                   (do (employee-model/insertE params)
+                     (resp/redirect "/employees")))
+
+           (GET "/model/employees/:id/update" [id] (controller/updatingEmployees id))
+
+           (POST "/model/employees/:employeeNumber/update" [& params]
+             (do (employee-model/update (:employeeNumber params) params)
+                 (resp/redirect "/employees")))
+
+
+           (POST "/model/customers/insert" [& params]
+             (do (customers-model/insertC params)
+                 (resp/redirect "/customers")))
+
+           (GET "/model/customers/:id/update" [id] (controller/updatingCustomers id))
+
+           (POST "/model/customers/:customerNumber/update" [& params]
+             (do (customers-model/update (:customerNumber params) params)
+                 (resp/redirect "/customers")))
+
            )
 
 (defroutes app-routes

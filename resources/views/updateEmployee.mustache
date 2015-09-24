@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Update employee</title>
+</head>
+<body>
+<div id="addForm" style="width:30%;">
+    <form action="/model/employees/{{employees.employeenumber}}/update" method="post">
+        <div class="form-group">
+            <label for="model">First name</label>
+            <input type="text" class="form-control" name="firstName" value="{{employees.firstname}}"/>
+        </div>
+        <div class="form-group">
+            <label for="year">Last name</label>
+            <input type="text" class="form-control" name="lastName" value="{{employees.lastname}}"/>
+        </div>
+        <div class="form-group">
+            <label for="horsepower">Email</label>
+            <input type="text" class="form-control" name="email" value="{{employees.email}}"/>
+        </div>
+
+        <div class="form-group">
+
+            <label for="man_id">Manufracturer</label>
+            <select name="officeCode" class="form-control" id="officeCode">
+                {{#offices}}
+                    <option value="{{officecode}}">{{city}}</option>
+                {{/offices}}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Save update</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

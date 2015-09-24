@@ -21,3 +21,14 @@
 
 (defn removeC [id]
   (jdbc/delete! mysql-db :customers (sql/where {:customerNumber id})))
+
+(defn get [id]
+  (first (jdbc/query mysql-db
+                     (sql/select * :customers (sql/where {:customerNumber id})))))
+
+(defn update [id params]
+  (jdbc/update! mysql-db :customers params (sql/where {:customerNumber id})))
+
+(defn insertC
+  [params]
+  (jdbc/insert! mysql-db :customers params))

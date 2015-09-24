@@ -3,10 +3,13 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+    <script src="js/main.js"></script>
     <title>Employees</title>
 </head>
 <body>
@@ -24,7 +27,13 @@
         <!--<li role="presentation"><a href="/weka">Weka</a></li>-->
     </ul>
     <br>
-    <h1>Table customers</h1>
+
+    <h1>
+        <button class="btn btn-success" id="addCustomers" onclick="dodajC()">Add new</button>
+        Table customers
+    </h1>    <br>
+
+
     <br>
         <table class="table table-bordered table-hover">
         <tr>
@@ -47,12 +56,14 @@
                 <th>{{addressline1}}</th>
                 <th>{{city}}</th>
                 <th>{{state}}</th>
-                <td><a href="/model/customers/{{customernumber}}/update" class="btn btn-success">Edit</a></td>
-                <td><a href="/model/customers/{{customernumber}}/remove" class="btn btn-success">Remove</a></td>
+                <td><a href="/model/customers/{{customernumber}}/update" class="btn btn-info">Edit</a></td>
+                <td><a href="/model/customers/{{customernumber}}/remove" class="btn btn-danger">Remove</a></td>
             </tr>
             {{/customers}}
 
         </table>
+
+
 
 </div>
 </body>

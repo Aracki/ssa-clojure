@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: overtone/libs.handlers:0.2.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/overtone/libs.handlers/0.2.0/libs.handlers-0.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
