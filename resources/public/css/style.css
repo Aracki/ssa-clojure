@@ -22,7 +22,7 @@ h1 #addCustomers{
     color: rgb(0, 76, 193);
 }
 
-ul.nav a:hover { background-color: #D0E9C6 !important; }
+ul.nav a:hover { background-color: transparent !important; }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: transparent;
@@ -31,3 +31,26 @@ ul.nav a:hover { background-color: #D0E9C6 !important; }
 #rowAudio{
     padding-top: 5%;
 }
+
+#addForm{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.big{
+    padding-top: 8%;
+    font-size: 4.2em;
+    color: #9b0055;
+    font-style: italic;
+    text-shadow: 7px 5px 9px rgba(150, 150, 150, 0.66)
+}
+
+#navMeni{
+    display: inline-block;
+    margin-left: 37%;
+    border: 4px solid #9b0055;
+    -moz-border-radius: 25px 10px / 10px 25px;
+    border-radius: 40px 25px / 24px 32px;
+    background-clip: padding-box;
+}
+

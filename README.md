@@ -1,10 +1,17 @@
-# ssa_raca
+# Projekat za savremene softverske arhitekture
 
 A Clojure project @FON 2015
+Libraries and tools used: 
+
+- Compojure
+- Ring
+- mysql Jdbc connector
+- Clostache
+
 
 ## Usage
 
-FIXME
+Import mysql classicmodels.sql and run web app using command "lein ring server" 
 
 ## License
 
