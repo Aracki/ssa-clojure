@@ -1,4 +1,4 @@
-# Projekat za savremene softverske arhitekture
+# Clojure customers and employees web app with Bootstrap
 
 Simple clojure web application for handling data from database. This web app is using basic CRUD operations (Create, Read, Update, Delete). It uses standard mysql jdbc connector for communicating with database which is hosted on localhost.
 
