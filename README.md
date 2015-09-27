@@ -15,17 +15,45 @@ Sending data from server for mustache template with Clostache library:
                                 }))
 ```
 
+
 In this way you can use this variables in html pages with scriplets code :
-{{employees}} and {{offices}} ...
+{{employees}} and {{offices}} and access to theirs attributes :
 
-The app uses Ring and Compojure library for abstracting HTTP requests and response into a simple API.
+```html
+{{#employees}}
+<tr class="success">
+    <th>{{employeenumber}}</th>
+    <th>{{firstname}} {{lastname}}</th>
+    <th>{{email}}</th>
+    <th>{{officecode}}</th>
+    <td><a href="/model/employees/{{employeenumber}}/update" class="btn btn-info">Edit</a></td>
+    <td><a href="/model/employees/{{employeenumber}}/remove" class="btn btn-danger">Remove</a></td>
+</tr>
+{{/employees}}
+```
 
+The app uses Ring and Compojure library for abstracting HTTP requests and response into a simple API to manipulate with GET, POST, PUT requests.
+
+```html
+(POST "/model/employees/insert" [& params]
+  (do (employee-model/insertE params)
+    (resp/redirect "/employees")))
+(POST "/model/employees/:employeeNumber/update" [& params]
+(do (employee-model/update (:employeeNumber params) params)
+(resp/redirect "/employees")))
+```
+
+
+Customers table :
 ![Alt text](resources/public/img/customers.png?raw=true "Customers table")
 
+Employees table :
 ![Alt text](resources/public/img/employees.png?raw=true "Employees table")
 
+Edit employee example :
 ![Alt text](resources/public/img/edit.png?raw=true "Edit employee")
 
+Insert employee example :
 ![Alt text](resources/public/img/insert.png?raw=true "Insert employee")
 
 A Clojure project @FON 2015
