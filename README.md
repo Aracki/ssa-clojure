@@ -20,9 +20,9 @@ In this way you can use this variables in html pages with scriplets code :
 
 The app uses Ring and Compojure library for abstracting HTTP requests and response into a simple API.
 
-![Alt text](/img/customers.png?raw=true "Customers table")
+![Alt text](/img/customers.png "Customers table")
 
-![Alt text](/img/employees.png?raw=true "Employees table")
+![Alt text](/img/employees.png "Employees table")
 
 ![Alt text](/img/edit.png?raw=true "Edit employee")
 
